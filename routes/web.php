@@ -16,3 +16,35 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/input-akun', function () {
+    return view('account-input');
+});
+
+Route::get('/kelola-akun', function () {
+    return view('account-management');
+});
+
+Route::get('/input-karyawan', function () {
+    return view('employed-data');
+});
+
+Route::get('/kelola-karyawan', function () {
+    return view('employed-management');
+});
+
+Route::get('/absensi', function () {
+    return view('absensi');
+});
+
+Route::get('/input-salary', function () {
+    return view('input-salary');
+});
+
+Route::get('/report-salary', function () {
+    return view('report-salary');
+});
+
+Route::get('/slip-gaji', function () {
+    return view('salary-slip');
+});
