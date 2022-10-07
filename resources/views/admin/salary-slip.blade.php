@@ -8,9 +8,12 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Input Data Karyawan</title>
+    <title>Slip Gaji</title>
 
     <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,7 +51,7 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
-                    <a href="" class="app-brand-link">
+                    <a href="/" class="app-brand-link">
                         <span class="app-brand-logo demo">
 
                             <defs>
@@ -177,7 +180,7 @@
                     </li>
 
                     <!-- Laporan -->
-                    <li class="menu-item ">
+                    <li class="menu-item active">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-detail"></i>
                             <div data-i18n="laporan">Laporan</div>
@@ -207,125 +210,80 @@
                     <!-- Content -->
 
                     <div class="container-xxl flex-grow-1 container-p-y">
-                        <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Data Karyawan /</span> Input
-                            Data Karyawan</h4>
+                        <h4 class="fw-bold py-3 mb-4">
+                            <span class="text-muted fw-light">Slip Gaji Karyawan</span>
+                        </h4>
 
                         <div class="row">
                             <div class="col-md-12">
                                 <ul class="nav nav-pills flex-column flex-md-row mb-3">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="javascript:void(0);"><i
-                                                class="bx bx-user me-1"></i> Input Data Karyawan</a>
+                                        <a class="nav-link active" href="/slip-gaji"><i
+                                                class="bx bx-user me-1"></i>
+                                            Slip Gaji Karyawan</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="/kelola-karyawan"><i
-                                                class="bx bx-bell me-1"></i> Kelola Data Karyawan</a>
-                                    </li>
-
                                 </ul>
-                                <div class="card mb-4">
-                                    <h5 class="card-header">Input Data Karyawan</h5>
 
+                                <hr class="my-4" />
 
-                                    <!-- Form Input Akun -->
+                                <!-- Tabel Absensi Karyawan -->
+                                <div class="card">
+                                    <h5 class="card-header"> Slip Gaji Karyawan</h5>
 
-                                    <hr class="my-0" />
-
+                                    <!-- Search -->
                                     <div class="card-body">
-
-
-                                        <form id="formAccountSettings" method="POST" onsubmit="return false">
-                                            <div class="row">
-
-                                                <!-- Id Karyawan -->
-
-                                                <div class="mb-3 col-md-6">
-                                                    <label for="idKaryawan" class="form-label">Id Karyawan</label>
-                                                    <input class="form-control" type="text" name="idKaryawan"
-                                                        id="idKaryawan" value="" autofocus />
-                                                </div>
-
-                                                <!-- Status -->
-
-                                                <div class="mb-3 col-md-6">
-                                                    <label for="status" class="form-label">Status</label>
-                                                    <input class="form-control" type="text" name="status" id="status"
-                                                        value="" />
-                                                </div>
-
-
-                                                <!-- Nama Lengkap -->
-
-                                                <div class="mb-3 col-md-6">
-                                                    <label for="namaLengkap" class="form-label">Nama Karyawan</label>
-                                                    <input class="form-control" type="text" name="namaLengkap"
-                                                        id="namaLengkap" value="" />
-                                                </div>
-
-                                                <!-- Password -->
-
-                                                <div class="mb-3 col-md-6">
-                                                    <label for="jabatan" class="form-label">Jabatan</label>
-                                                    <input class="form-control" type="text" id="jabatan" name="jabatan"
-                                                        value="" placeholder="" />
-                                                </div>
-
-                                                <!-- TTL -->
-                                                <div class="mb-3 col-md-6">
-                                                    <label for="ttl" class="form-label">Tempat Tanggal Lahir</label>
-                                                    <input class="form-control" type="text" id="ttl" name="ttl"
-                                                        value="" />
-                                                </div>
-
-
-                                                <!-- Phone Number -->
-
-                                                <div class="mb-3 col-md-6">
-                                                    <label class="form-label" for="phoneNumber">Phone Number</label>
-                                                    <div class="input-group input-group-merge">
-                                                        <span class="input-group-text">ID (+62)</span>
-                                                        <input type="text" id="phoneNumber" name="phoneNumber"
-                                                            class="form-control" placeholder="" />
-                                                    </div>
-                                                </div>
-
-                                                <!-- Jenis Kelamin -->
-                                                <div class="mb-3 col-md-6">
-                                                    <label for="gender" class="form-label">Jenis Kelamin</label>
-                                                    <input class="form-control" type="text" id="gender" name="gender"
-                                                        value="" />
-                                                </div>
-
-                                                <!-- Alamat -->
-
-                                                <div class="mb-3 col-md-6">
-                                                    <label for="alamat" class="form-label">Alamat</label>
-                                                    <input class="form-control" type="text" id="alamat" name="alamat"
-                                                        value="" />
-                                                </div>
-
-                                                <!-- Agama -->
-                                                <div class="mb-3 col-md-6">
-                                                    <label for="Agama" class="form-label">Agama</label>
-                                                    <input class="form-control" type="text" id="Agama" name="Agama"
-                                                        value="" />
-                                                </div>
-
-                                                <div class="mt-2">
-                                                    <button type="button" class="btn btn-primary">Save</button>
-                                                    <button type="reset"
-                                                        class="btn btn-outline-secondary">Cancel</button>
-                                                </div>
-                                        </form>
+                                        <div class="mb-3 col -md-6">
+                                            <div class="nav-item d-flex align-items-center">
+                                                <i class="bx bx-search fs-4 lh-0"></i>
+                                                <input type="text" class="form-control border-0 shadow-none"
+                                                    placeholder="Cari Data" aria-label="Search" />
+                                            </div>
+                                        </div>
                                     </div>
-                                    <!-- /Account -->
+                                    <!-- Tabel Data -->
+                                    <div class="table-responsive text-nowrap">
+                                        <table class="table">
+                                            <thead>
+                                                <tr class="text-nowrap">
+                                                    <th>ID</th>
+                                                    <th>Nama Karyawan</th>
+                                                    <th>Jabatan</th>
+                                                    <th>Gaji Pokokp</th>
+                                                    <th>Tunjangan Jabatan</th>
+                                                    <th>Uang Beras</th>
+                                                    <th>Potongan Absen</th>
+                                                    <th>Total</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                    <div class="mt-2">
+                                                            <button type="edit"
+                                                                class="btn btn-primary me-2">Lihat</button>
+                                                            <button type="delete"
+                                                                class="btn btn-outline-secondary">Cetak</button>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
                     <!-- / Content -->
-
-
 
                     <div class="content-backdrop fade"></div>
                 </div>
@@ -338,6 +296,7 @@
         <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
+
 
 
     <!-- Core JS -->
@@ -356,7 +315,6 @@
     <script src="../js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../js/pages-account-settings-account.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

@@ -8,9 +8,12 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Absensi</title>
+    <title> Gaji Karyawan</title>
 
     <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -48,7 +51,7 @@
 
             <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
                 <div class="app-brand demo">
-                    <a href="/" class="app-brand-link">
+                    <a href="index.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
 
                             <defs>
@@ -170,14 +173,14 @@
                         <ul class="menu-sub">
                             <li class="menu-item">
                                 <a href="/input-salary" class="menu-link">
-                                    <div data-i18n="newAccount">Input Gaji Karyawan</div>
+                                    <div data-i18n="newAccount">Input Data Karyawan</div>
                                 </a>
                             </li>
                         </ul>
                     </li>
 
                     <!-- Laporan -->
-                    <li class="menu-item ">
+                    <li class="menu-item active">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-detail"></i>
                             <div data-i18n="laporan">Laporan</div>
@@ -208,7 +211,7 @@
 
                     <div class="container-xxl flex-grow-1 container-p-y">
                         <h4 class="fw-bold py-3 mb-4">
-                            <span class="text-muted fw-light">Absensi</span>
+                            <span class="text-muted fw-light">Gaji Karyawan</span>
                         </h4>
 
                         <div class="row">
@@ -217,15 +220,15 @@
                                     <li class="nav-item">
                                         <a class="nav-link active" href="pages-account-settings-account.html"><i
                                                 class="bx bx-user me-1"></i>
-                                            Absensi Karyawan</a>
+                                            Gaji Karyawan</a>
                                     </li>
                                 </ul>
 
                                 <hr class="my-4" />
 
-                                <!-- Tabel Absensi Karyawan -->
+                                <!-- Tabel Gaji Karyawan -->
                                 <div class="card">
-                                    <h5 class="card-header">Absensi Karyawan</h5>
+                                    <h5 class="card-header">Gaji Karyawan</h5>
 
                                     <!-- Search -->
                                     <div class="card-body">
@@ -257,10 +260,11 @@
                                                     <th>ID</th>
                                                     <th>Nama Karyawan</th>
                                                     <th>Jabatan</th>
-                                                    <th>No Hp</th>
-                                                    <th>Jam Keluar</th>
-                                                    <th>Keterangan</th>
-                                                    <th>Action</th>
+                                                    <th>Gaji Pokok</th>
+                                                    <th>Tunjangan</th>
+                                                    <th>Uang Beras</th>
+                                                    <th>Potongan Absen</th>
+                                                    <th>Total</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -271,14 +275,8 @@
                                                     <td></td>
                                                     <td></td>
                                                     <td></td>
-                                                    <td>
-                                                        <div class="mt-2">
-                                                            <button type="edit"
-                                                                class="btn btn-primary me-2">Edit</button>
-                                                            <button type="delete"
-                                                                class="btn btn-outline-secondary">Hapus</button>
-                                                        </div>
-                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
                                                 </tr>
                                             </tbody>
                                         </table>

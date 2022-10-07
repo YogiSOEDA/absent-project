@@ -12,6 +12,8 @@
 
     <meta name="description" content="" />
 
+    Favicon
+    <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -114,119 +116,131 @@
           <ul class="menu-inner py-1">
 
                     <!-- Dashboard -->
-                    <li class="menu-item active">
-                        <a href="/" class="menu-link">
+                    <li class="menu-item">
+                        <a href="/home-kar" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-home-circle"></i>
                             <div data-i18n="home">Home</div>
                         </a>
                     </li>
 
-                    <!-- Account -->
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-user"></i>
-                            <div data-i18n="Account">Akun</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="/input-akun" class="menu-link">
-                                    <div data-i18n="newAccount">Input Data Karyawan</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/kelola-akun" class="menu-link">
-                                    <div data-i18n="accountSetting">Kelola Data Karyawan</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <!-- Data Karyawan -->
-                    <li class="menu-item">
-              <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons bx bx-box"></i>
-                <div data-i18n="dataKaryawan">Data Karyawan</div>
-              </a>
-              <ul class="menu-sub">
-                <li class="menu-item">
-                  <a href="/input-karyawan" class="menu-link">
-                    <div data-i18n="newAccount">Input Data Karyawan</div>
-                  </a>
-                </li>
-                <li class="menu-item">
-                  <a href="/kelola-karyawan" class="menu-link">
-                    <div data-i18n="accountSetting">Kelola Data Karyawan</div>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
+                   
                     <!-- Absensi -->
                     <li class="menu-item">
-                        <a href="/absensi" class="menu-link">
+                        <a href="/absensi-kar" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-copy"></i>
                             <div data-i18n="absensi">Absensi</div>
                         </a>
                     </li>
 
-                    <!-- Penggajian -->
-                    <li class="menu-item">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-credit-card"></i>
-                            <div data-i18n="penggajian">Penggajian</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="/input-salary" class="menu-link">
-                                    <div data-i18n="newAccount">Input Gaji Karyawan</div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-
+                
                     <!-- Laporan -->
-                    <li class="menu-item ">
-                        <a href="javascript:void(0);" class="menu-link menu-toggle">
-                            <i class="menu-icon tf-icons bx bx-detail"></i>
-                            <div data-i18n="laporan">Laporan</div>
-                        </a>
-                        <ul class="menu-sub">
-                            <li class="menu-item">
-                                <a href="/report-salary" class="menu-link">
-                                    <div data-i18n="Account">Gaji Karyawan</div>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="/slip-gaji" class="menu-link">
+                    <li class="menu-item active">
+                                <a href="/salary-kar" class="menu-link">
+                                <i class="menu-icon tf-icons bx bx-credit-card"></i>
                                     <div data-i18n="Notifications">Slip Gaji</div>
                                 </a>
                             </li>
-                        </ul>
-                    </li>
                 </ul>
             </aside>
             <!-- / Menu -->
 
-            <!-- Layout container -->
-            <div class="layout-page">
+             <!-- Layout container -->
+             <div class="layout-page">
 
-                <!-- Content wrapper -->
-                <div class="content-wrapper">
-                    <!-- Content -->
+<!-- Content wrapper -->
+<div class="content-wrapper">
+    <!-- Content -->
 
+    <div class="container-xxl flex-grow-1 container-p-y">
+        <h4 class="fw-bold py-3 mb-4">
+            <span class="text-muted fw-light">Gaji Karyawan</span>
+        </h4>
 
-                    <!-- / Content -->
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-pills flex-column flex-md-row mb-3">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="pages-account-settings-account.html"><i
+                                class="bx bx-user me-1"></i>
+                            Gaji Karyawan</a>
+                    </li>
+                </ul>
 
+                <hr class="my-4" />
 
-                    <!-- Content wrapper -->
+                <!-- Tabel Gaji Karyawan -->
+                <div class="card">
+                    <h5 class="card-header">Gaji Karyawan</h5>
+
+                    <!-- Search -->
+                    <div class="card-body">
+                        <div class="mb-3 col -md-6">
+                            <div class="nav-item d-flex align-items-center">
+                                <i class="bx bx-search fs-4 lh-0"></i>
+                                <input type="text" class="form-control border-0 shadow-none"
+                                    placeholder="Cari Data" aria-label="Search" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="mt-2">
+                            <button type="button" class="btn btn-primary me-2">
+                                <span class="tf-icons bx bx-download"></span> Cetak PDF
+                            </button>
+                            <button type="button" class="btn btn-primary me-2">
+                                <span class="tf-icons bx bx-printer"></span> Print to Print
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tabel Data -->
+                    <div class="table-responsive text-nowrap">
+                        <table class="table">
+                            <thead>
+                                <tr class="text-nowrap">
+                                    <th>ID</th>
+                                    <th>Nama Karyawan</th>
+                                    <th>Jabatan</th>
+                                    <th>Gaji Pokok</th>
+                                    <th>Tunjangan</th>
+                                    <th>Uang Beras</th>
+                                    <th>Potongan Absen</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-                <!-- / Layout page -->
-            </div>
 
-            <!-- Overlay -->
-            <div class="layout-overlay layout-menu-toggle"></div>
+            </div>
         </div>
-        <!-- / Layout wrapper -->
+    </div>
+    <!-- / Content -->
+
+    <div class="content-backdrop fade"></div>
+</div>
+<!-- Content wrapper -->
+</div>
+<!-- / Layout page -->
+</div>
+
+<!-- Overlay -->
+<div class="layout-overlay layout-menu-toggle"></div>
+</div>
+<!-- / Layout wrapper -->
 
         <!-- Core JS -->
   <!-- build:js assets/vendor/js/core.js -->
