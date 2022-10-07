@@ -13,38 +13,64 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//--------Admin---------//
 Route::get('/', function () {
-    return view('welcome');
+    return view('admin\welcome');
 });
 
 Route::get('/input-akun', function () {
-    return view('account-input');
+    return view('admin\account-input');
 });
 
 Route::get('/kelola-akun', function () {
-    return view('account-management');
+    return view('admin\account-management');
 });
 
 Route::get('/input-karyawan', function () {
-    return view('employed-data');
+    return view('admin\employed-data');
 });
 
 Route::get('/kelola-karyawan', function () {
-    return view('employed-management');
+    return view('admin\employed-management');
 });
 
 Route::get('/absensi', function () {
-    return view('absensi');
+    return view('admin\absensi');
 });
 
 Route::get('/input-salary', function () {
-    return view('input-salary');
+    return view('admin\input-salary');
 });
 
 Route::get('/report-salary', function () {
-    return view('report-salary');
+    return view('admin\report-salary');
 });
 
 Route::get('/slip-gaji', function () {
-    return view('salary-slip');
+    return view('admin\salary-slip');
 });
+
+
+//--------Karyawan---------//
+Route::get('/home-kar', function () {
+    return view('karyawan\home');
+});
+
+Route::get('/absensi-kar', function () {
+    return view('karyawan\absensi');
+});
+
+Route::get('/salary-kar', function () {
+    return view('karyawan\salary');
+});
+
+Route::get('/recognition', function () {
+    return view('karyawan\face-absensi');
+});
+
+
+//--------Login---------//
+Route::get('/login', function () {
+    return view('login');
+});
+
